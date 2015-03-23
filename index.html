@@ -53,17 +53,17 @@
       <div class="container">
         {% capture foottext %} {% include footer.md %} {% endcapture %}
         {{ foottext | markdownify }}
+        <audio controls>
+          <source src="../_music/Fairytale.ogg" type="audio/ogg">
+          <source src="../_music/Fairytale.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio>
       </div>
     </div>
   </div>
 
 {% include analytics.html %}
-<audio controls>
-  <source src="_music/fairytale.ogg" type="audio/ogg">
-  <source src="_music/fairytale.mp3" type="audio/mpeg">
-  <source src="_music/fairytale.wav" type="audio/wav">
-Your browser does not support the audio element.
-</audio>
+
 </body>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="site.js"></script>
