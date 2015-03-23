@@ -16,7 +16,7 @@ Click here to pay the $50.00 registration fee or to become a partner with Dreams
 
 If you are an Iowa girl with special needs, you can be part of the Dreams Made True, Inc. Pageant.  Registration is preferred by June 1, 2015, along with the $50.00 registration fee.  This fee covers all pageant events, meals, a t-shirt for the contestant, and two adult tickets to the main event! Registrations received after June 1 are not guaranteed a t-shirt or recognition in the program.
 
-<iframe src="https://docs.google.com/forms/d/1hhnQwhHq4I2i-Ww-7SYhNhY-0DZWsszbsLKsh-rdunk/viewform?embedded=true" width="100%" height="auto" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+<iframe src="https://docs.google.com/forms/d/1hhnQwhHq4I2i-Ww-7SYhNhY-0DZWsszbsLKsh-rdunk/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 
 
 ### Embed your video like this:
