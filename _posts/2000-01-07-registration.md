@@ -1,5 +1,5 @@
 ---
-title: "video"
+title: "Registration"
 bg: turquoise
 color: white
 fa-icon: film
