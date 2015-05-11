@@ -100,7 +100,7 @@ a:focus {
 
 .navbar-custom .nav li a:hover {
     outline: 0;
-    color: #FF0066;
+    color: #CC0099;
     background-color: transparent;
 }
 
@@ -115,11 +115,11 @@ a:focus {
 }
 
 .navbar-custom .nav li.active a {
-    background-color: #FF0066;
+    background-color: #CC0099;
 }
 
 .navbar-custom .nav li.active a:hover {
-    color: #FF0066;
+    color: #CC0099;
 }
 
 @media(min-width:768px) {
@@ -305,17 +305,17 @@ a:focus {
 }
 
 .btn-default {
-    border: 1px solid #FF0066;
-    color: #FF0066;
+    border: 1px solid #CC0099;
+    color: #CC0099;
     background-color: transparent;
 }
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid #FF0066;
+    border: 1px solid #CC0099;
     outline: 0;
     color: #000;
-    background-color: #FF0066;
+    background-color: #CC0099;
 }
 
 ul.banner-social-buttons {
