@@ -22,6 +22,8 @@
     <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -165,13 +167,16 @@
 
     <!--_Photos Section -->
     <section id="photos" class="container content-section text-center">
+      <div class="col-lg-8 col-lg-offset-2">
+        <h2> Photos </h2>
         <ul class="row">
-          <script language="JavaScript">
-          for (var i = 1; i<265, i++){
-            document.write(<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img src="img/DMT-2014/2014 ("i").jpg"/></li>);
+          <script>
+          for (var i = 1; i<265; i++){
+            document.write('<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4"><img src="img/DMT-2014/2014 ('i').jpg"/></li>');
           }
           </script>
-      </ul>
+        </ul>
+      </div>
 
 
     <!-- Previous Winners Section -->
@@ -223,7 +228,7 @@
     <footer>
         <div class="container text-center">
             <p>Copyright &copy; Dreams Made True, Inc. 2015</p>
-            <audio controls autoplay loop>
+            <audio controls loop>
               <source src="Fairytale.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio>
