@@ -200,7 +200,7 @@ a:focus {
 
 .btn-circle:hover,
 .btn-circle:focus {
-    border: 2px solid #FF3399; 
+    border: 2px solid #FF3399;
     outline: 0;
     color: #FF3399;
     background: rgba(255,255,255,.1);
@@ -262,7 +262,7 @@ a:focus {
     padding-top: 100px;
 }
 
-.download-section {
+.register-section {
     width: 100%;
     padding: 50px 0;
     color: #fff;
@@ -285,7 +285,7 @@ a:focus {
         padding-top: 250px;
     }
 
-    .download-section {
+    .register-section {
         padding: 100px 0;
     }
 
