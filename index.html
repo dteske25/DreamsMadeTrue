@@ -175,12 +175,11 @@
         <ol class="carousel-indicators">
           <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
           <script>
-          var i = 1;
-          while (i < 10){
-
-            $(".carousel-indicators").append("<li data-target='#carousel-example-generic' data-slide-to="i"></li>");
-            i++;
-          }
+            var i = 1;
+            while (i < 10){
+              $(".carousel-indicators").add("<li data-target='#carousel-example-generic' data-slide-to="i"></li>");
+              i++;
+            }
           </script>
         </ol>
 
@@ -189,8 +188,7 @@
           <script>
           var i = 1;
           while (i < 10){
-
-            $(".carousel-inner").append("<div class='item active'><img src='img/DMT-2014/2014 ("i").jpg'></div>");
+            $(".carousel-inner").add("<div class='item active'><img src='img/DMT-2014/2014 ("i").jpg'></div>");
             i++;
           }
           </script>
