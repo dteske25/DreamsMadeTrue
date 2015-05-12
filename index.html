@@ -22,8 +22,7 @@
     <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -169,33 +168,23 @@
     <!--_Photos Section -->
     <section id="photos" class="container content-section text-center">
       <h2> Photos </h2>
-
       <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-          <script>
-            var i = 1;
-            while (i < 10){
-              $(".carousel-indicators").add("<li data-target='#carousel-example-generic' data-slide-to="i"></li>");
-              i++;
-            }
-          </script>
-        </ol>
 
         <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-          <script>
-          var i = 1;
-          while (i < 10){
-            $(".carousel-inner").add("<div class='item active'><img src='img/DMT-2014/2014 ("i").jpg'></div>");
-            i++;
-          }
-          </script>
-
+        <div class="carousel-inner" id="images">
           <div class="item active">
             <img src="img/DMT-2014/2014 (1).jpg">
           </div>
+
+          <script>
+          i = 2;
+          while (i < 265){
+            $("#images").append('<div class="item"><img src="img/DMT-2014/2014 (' + i + ').jpg"></div>');
+            i++;
+          };
+          </script>
+
+
 
         </div>
 

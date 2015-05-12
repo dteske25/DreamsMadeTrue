@@ -305,11 +305,11 @@ if (typeof jQuery === 'undefined') {
 
   var Carousel = function (element, options) {
     this.$element    = $(element)
-    this.$indicators = this.$element.find('.carousel-indicators')
+    //this.$indicators = this.$element.find('.carousel-indicators')
     this.options     = options
     this.paused      = null
     this.sliding     = null
-    this.interval    = null
+    this.interval    = 1000
     this.$active     = null
     this.$items      = null
 
@@ -322,10 +322,10 @@ if (typeof jQuery === 'undefined') {
 
   Carousel.VERSION  = '3.3.4'
 
-  Carousel.TRANSITION_DURATION = 600
+  Carousel.TRANSITION_DURATION = 200
 
   Carousel.DEFAULTS = {
-    interval: 5000,
+    interval: 1000,
     pause: 'hover',
     wrap: true,
     keyboard: true
@@ -425,11 +425,11 @@ if (typeof jQuery === 'undefined') {
 
     isCycling && this.pause()
 
-    if (this.$indicators.length) {
-      this.$indicators.find('.active').removeClass('active')
-      var $nextIndicator = $(this.$indicators.children()[this.getItemIndex($next)])
-      $nextIndicator && $nextIndicator.addClass('active')
-    }
+    // if (this.$indicators.length) {
+    //   this.$indicators.find('.active').removeClass('active')
+    //   var $nextIndicator = $(this.$indicators.children()[this.getItemIndex($next)])
+    //   $nextIndicator && $nextIndicator.addClass('active')
+    // }
 
     var slidEvent = $.Event('slid.bs.carousel', { relatedTarget: relatedTarget, direction: direction }) // yes, "slid"
     if ($.support.transition && this.$element.hasClass('slide')) {
