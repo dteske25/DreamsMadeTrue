@@ -314,6 +314,19 @@ a:focus {
     margin-top: 100px;
 }
 
+.table{
+  border: none;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size:18px;
+}
+
+.left {
+  align: right;
+}
+.right {
+  align: left;
+}
+
 @media(min-width:767px) {
     .content-section {
         padding-top: 250px;
@@ -325,9 +338,9 @@ a:focus {
     .info-section {
         padding: 100px 0;
     }
-    .register-section {
+    /*.register-section {
         padding: 100px 0;
-    }
+    }*/
     .previous-section {
         padding: 100px 0;
     }
@@ -355,17 +368,17 @@ a:focus {
 }
 
 .btn-default {
-    border: 1px solid #FF3399;
-    color: #FF3399;
+    border: 1px solid #FF0099;
+    color: #FF0099;
     background-color: transparent;
 }
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid #FF3399;
+    border: 1px solid #FF0099;
     outline: 0;
     color: #000;
-    background-color: #FF3399;
+    background-color: #FF0099;
 }
 
 ul.banner-social-buttons {
