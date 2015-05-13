@@ -262,11 +262,45 @@ a:focus {
     padding-top: 100px;
 }
 
-.register-section {
+#info {
     width: 100%;
-    padding: 50px 0;
+    padding: 100px 0;
     color: #fff;
-    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
+    background: url(../img/background1.png) no-repeat bottom center scroll;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+#previous {
+    width: 100%;
+    padding: 100px 0;
+    color: #fff;
+    background: url(../img/background2.png) no-repeat bottom center scroll;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+#photos {
+    width: 100%;
+    padding: 100px 0;
+    color: #fff;
+    background: url(../img/) no-repeat bottom center scroll;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+#about {
+    width: 100%;
+    padding: 100px 0;
+    color: #fff;
+    background: url(../img/) no-repeat center center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -285,7 +319,22 @@ a:focus {
         padding-top: 250px;
     }
 
+    .about-section {
+        padding: 100px 0;
+    }
+    .info-section {
+        padding: 100px 0;
+    }
     .register-section {
+        padding: 100px 0;
+    }
+    .previous-section {
+        padding: 100px 0;
+    }
+    .photos-section {
+        padding: 100px 0;
+    }
+    .contact-section {
         padding: 100px 0;
     }
 
