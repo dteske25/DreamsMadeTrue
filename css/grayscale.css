@@ -308,6 +308,10 @@ a:focus {
     -o-background-size: cover;
 }
 
+#myModal {
+  color: #000000;
+}
+
 #map {
     width: 100%;
     height: 200px;
@@ -409,14 +413,14 @@ footer p {
 
 ::-moz-selection {
     text-shadow: none;
-    background: #fcfcfc;
-    background: rgba(255,255,255,.2);
+    background: #FF0099;
+
 }
 
 ::selection {
     text-shadow: none;
-    background: #fcfcfc;
-    background: rgba(255,255,255,.2);
+    background: #FF0099;
+
 }
 
 img::selection {
