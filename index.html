@@ -325,19 +325,26 @@
           <div class="modal-body">
             <div class="form-group">
               <label for="email">To:</label>
-              <input type="email" class="form-control" id="email" name='to' value="admin@dreams-made-true.org">
+              <select name="to" id="email" class="form-control">
+                  <option value="info@dreams-made-true.org">
+                      General Information
+                  </option>
+                  <option value="admin@dreams-made-true.org">
+                      Technical Help
+                  </option>
+              </select>
             </div>
             <div class="form-group">
               <label for="email">From:</label>
-              <input type="email" class="form-control" id="email" name='from' placeholder="Enter Email">
+              <input type="email" class="form-control" id="email" name='from' placeholder="Enter Email" required>
             </div>
             <div class="form-group">
               <label for="text">Subject</label>
-              <input type="text" class="form-control" id="subject" name='subject' placeholder="Enter Subject">
+              <input type="text" class="form-control" id="subject" name='subject' placeholder="Enter Subject" required>
             </div>
             <div class="form-group">
-              <label for="text">Message</label>
-              <input type="textarea" class="form-control" id="message" name='message' placeholder="Enter Message">
+              <label for="textarea">Message</label>
+              <textarea id="message" name="message" class="form-control" rows="4" placeholder="Enter Message" required></textarea>
             </div>
 
           </div>
