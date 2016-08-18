@@ -3,17 +3,32 @@
 * Code licensed under the Apache License v2.0.
 * For details, see http://www.apache.org/licenses/LICENSE-2.0.
 */
+var maxImageSize = 0;
 $(document).ready(function(){
-  var date = new Date();
-  month = date.getMonth();
-  i = 1 + (22 * month);
-  c = i + 22;
-  $("#images").append('<div class="item active"><img src="img/DMT-2014/2014 (' + i + ').jpg"></div>');
-  i++;
-  while (i < c){
-    $("#images").append('<div class="item"><img src="img/DMT-2014/2014 (' + i + ').jpg"></div>');
-    i++;
-  }
+  $('.carousel-control').on("focus",function(){
+        $(':focus').blur();
+    });
+    $("#images").append('<div class="item active default"><img src="img/default.jpg"></div>');
+    var feed = new Instafeed({
+        //If the accessToken dies, redo it at http://instagram.pixelunion.net/
+        accessToken: '481121239.1677ed0.6581ba1d44e54029a60ce2841fa17a50',
+        get: 'user',
+        userId:'481121239',
+        sortBy: 'most-recent',
+        target: 'images',
+        resolution: 'standard_resolution',
+        template: '<div class="item"><img class="instafeed-image" src="{{image}}" style="width:{{width}}px;" /></div>',
+        filter: function(image) {
+            if (image != null && image.images.standard_resolution.height >= maxImageSize){
+                maxImageSize = image.images.standard_resolution.height;
+                $("#images").css("height", maxImageSize);
+            }
+            return image.tags.indexOf('dreamsmadetruepageant') >= 0; //TODO: add tag to use
+        }
+    });
+    feed.run();
+
+    //TODO: Set next one pulled to active, and remove first one
 });
 
 
