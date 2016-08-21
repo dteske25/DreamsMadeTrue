@@ -23,12 +23,10 @@ $(document).ready(function(){
                 maxImageSize = image.images.standard_resolution.height;
                 $("#images").css("height", maxImageSize);
             }
-            return image.tags.indexOf('dreamsmadetruepageant') >= 0; //TODO: add tag to use
+            return image.tags.indexOf('dreamsmadetruepageant') >= 0;
         }
     });
     feed.run();
-
-    //TODO: Set next one pulled to active, and remove first one
 });
 
 
