@@ -6,6 +6,12 @@
 var maxImageSize = 0;
 $(document).ready(function(){
   $('#year').text(new Date().getFullYear());
+  $('#play-button').click(function (){
+    var music = document.getElementById("music"); 
+    music.paused ? music.play() : music.pause();
+    var newClass = music.paused ? "play" : "pause";
+    $('#play-button').removeClass("fa-play fa-pause").addClass(`fa-${newClass}`);
+  });
   $('.carousel-control').on("focus",function(){
         $(':focus').blur();
     });

@@ -34,9 +34,13 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">
-                    <i class="fa fa-play-circle"></i>  <span class="light">Dreams Made True, Inc.</span>
-                </a>
+                <div class="navbar-brand">
+                    <i class="fa fa-pause" id="play-button"></i>
+                    <a class="page-scroll" href="#page-top">
+                        <span class="light">Dreams Made True, Inc.</span>
+                    </a>
+                </div>
+                
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -440,7 +444,7 @@
     <footer>
         <div class="container text-center">
             <p>Copyright &copy; Dreams Made True, Inc. <span id="year">2000</span></p>
-            <audio controls autoplay loop>
+            <audio controls autoplay loop id="music">
                 <source src="Fairytale.mp3" type="audio/mpeg"> Your browser does not support the audio element.
             </audio>
         </div>

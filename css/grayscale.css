@@ -149,7 +149,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/headerBackground.png) no-repeat bottom center scroll;
+    background: url(~/../../img/headerBackground.png) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -268,7 +268,7 @@ a:focus {
     width: 100%;
     padding: 100px 0;
     color: #fff;
-    background: url(../img/background1.png) no-repeat bottom center scroll;
+    background: url(~/../../img/background1.png) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -279,7 +279,7 @@ a:focus {
     width: 100%;
     padding: 100px 0;
     color: #fff;
-    background: url(../img/background2.png) no-repeat bottom center scroll;
+    background: url(~/../../img/background2.png) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -291,7 +291,7 @@ a:focus {
     width: 100%;
     padding: 100px 0;
     color: #fff;
-    background: url(../img/) no-repeat bottom center scroll;
+    /* background: url(~/../../img/default.jpg) no-repeat bottom center scroll; */
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -302,7 +302,7 @@ a:focus {
     width: 100%;
     padding: 100px 0;
     color: #fff;
-    background: url(../img/) no-repeat center center scroll;
+    /* background: url(~/../../img/) no-repeat center center scroll; */
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -444,4 +444,8 @@ body {
 
 .row {
     padding-bottom: 3em;
+}
+
+#play-button {
+    cursor: pointer;
 }
