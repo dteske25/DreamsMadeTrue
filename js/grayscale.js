@@ -5,6 +5,7 @@
 */
 var maxImageSize = 0;
 $(document).ready(function(){
+  $('#year').text(new Date().getFullYear());
   $('.carousel-control').on("focus",function(){
         $(':focus').blur();
     });
