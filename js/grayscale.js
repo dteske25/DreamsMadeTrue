@@ -71,15 +71,14 @@ function init() {
   // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
   var mapOptions = {
     // How zoomed in you want the map to start at (always required)
-    zoom: 12,
+    zoom: 13,
 
     // The latitude and longitude to center the map (always required)
-    center: new google.maps.LatLng(42.08, -94.8664), // Carroll
+    center: new google.maps.LatLng(42.080, -94.8664), // Carroll
 
     // Disables the default Google Maps UI components
     disableDefaultUI: true,
-    scrollwheel: false,
-    draggable: false,
+    draggable: true,
 
     // How you would like to style the map.
     // This is where you would paste any style found on Snazzy Maps.
@@ -344,40 +343,30 @@ function init() {
   var map = new google.maps.Map(mapElement, mapOptions);
 
   // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
-  var image = 'img/rainbow.png';
-  var myLatLng = new google.maps.LatLng(42.091630, -94.862089);
-
-  var beachMarker = new google.maps.Marker({
-    position: myLatLng,
-    map: map,
-    icon: image,
-    title: "Carroll High School"
-  });
-
-  var image = 'img/hotel.png';
-  var myLatLng = new google.maps.LatLng(42.077613, -94.877861);
-  var beachMarker = new google.maps.Marker({
-    position: myLatLng,
-    map: map,
-    icon: image,
-    title: "Carrollton"
-  });
-
-  var image = 'img/hotel.png';
-  var myLatLng = new google.maps.LatLng(42.065333, -94.847562);
-  var beachMarker = new google.maps.Marker({
-    position: myLatLng,
-    map: map,
-    icon: image,
-    title: "Super 8 Motel"
-  });
-
-  var image = 'img/hotel.png';
-  var myLatLng = new google.maps.LatLng(42.073616, -94.880371);
-  var beachMarker = new google.maps.Marker({
-    position: myLatLng,
-    map: map,
-    icon: image,
-    title: "Day's Inn"
-  });
+  var markers = {
+    CarrollHighSchool: new google.maps.Marker({
+      position: new google.maps.LatLng(42.091630, -94.862089),
+      map: map,
+      icon: 'img/rainbow.png',
+      title: "Carroll High School"
+    }), 
+    Carrollton: new google.maps.Marker({
+      position: new google.maps.LatLng(42.077613, -94.877861),
+      map: map,
+      icon: 'img/hotel.png',
+      title: "Carrollton, Super 8 Hotel"
+    }),
+    Super8Motel:  new google.maps.Marker({
+      position: new google.maps.LatLng(42.065333, -94.847562),
+      map: map,
+      icon: 'img/hotel.png',
+      title: "Super 8 Hotel, Burke Inn"
+    }),
+    DaysInn: new google.maps.Marker({
+      position: new google.maps.LatLng(42.073616, -94.880371),
+      map: map,
+      icon: 'img/hotel.png',
+      title: "Day's Inn"
+    })
+  }
 }
